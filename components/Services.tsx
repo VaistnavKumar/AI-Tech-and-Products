@@ -3,7 +3,7 @@ import React from 'react';
 const Services: React.FC = () => {
   return (
     <section id="services" className="lg:px-12 lg:mb-20 max-w-[1600px] mr-auto mb-12 ml-auto pr-6 pl-6">
-      <h2 className="text-3xl lg:text-5xl font-medium text-stone-900 tracking-tight font-montserrat mb-10 lg:mb-12">Our Product Ecosystem</h2>
+      <h2 className="text-3xl lg:text-5xl font-medium text-white tracking-tight font-montserrat mb-10 lg:mb-12">Our Product Ecosystem</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 auto-rows-fr">
         
@@ -121,7 +121,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* Card 3: Predictive Analytics (Mint) */}
-        <div className="group relative overflow-hidden bg-lime-100/80 rounded-[32px] p-6 lg:p-10 flex flex-col justify-between min-h-[350px] transition-transform hover:scale-[1.01] duration-300 border border-lime-200">
+        <div className="group relative overflow-hidden bg-lime-100/90 rounded-[32px] p-6 lg:p-10 flex flex-col justify-between min-h-[350px] transition-transform hover:scale-[1.01] duration-300 border border-lime-200">
           
           {/* Visuals */}
           <div className="relative w-full h-32 mb-4">
@@ -154,7 +154,7 @@ const Services: React.FC = () => {
         </div>
 
         {/* Card 4: Intelligent Commerce (Sky Blue) */}
-        <div className="group relative overflow-hidden bg-sky-50 rounded-[32px] p-6 lg:p-10 flex flex-col justify-between min-h-[350px] transition-transform hover:scale-[1.01] duration-300 border border-sky-100">
+        <div className="group relative overflow-hidden bg-sky-100 rounded-[32px] p-6 lg:p-10 flex flex-col justify-between min-h-[350px] transition-transform hover:scale-[1.01] duration-300 border border-sky-200">
           
           {/* E-commerce Visual */}
           <div className="flex w-full h-32 relative justify-end">

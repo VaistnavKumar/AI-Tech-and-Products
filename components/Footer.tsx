@@ -24,43 +24,43 @@ const Footer: React.FC = () => {
 
       {/* Footer Links */}
       <footer className="max-w-[1600px] mx-auto px-6 lg:px-12 pb-8">
-        <div className="border rounded-3xl p-8 lg:p-12 shadow-sm bg-neutral-50 border-stone-200">
+        <div className="border rounded-3xl p-8 lg:p-12 shadow-sm bg-neutral-900 border-stone-800">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 justify-between">
             <div className="lg:w-1/3 space-y-5">
               <div className="flex gap-2 items-center">
-                <span className="text-2xl font-bold tracking-tighter font-google-sans-flex">Neural<span className="text-lime-500">labs</span></span>
+                <span className="text-2xl font-bold tracking-tighter font-google-sans-flex text-white">Neural<span className="text-lime-500">labs</span></span>
               </div>
-              <p className="text-sm text-stone-500 font-montserrat max-w-sm leading-relaxed">
+              <p className="text-sm text-stone-400 font-montserrat max-w-sm leading-relaxed">
                 Next-generation AI and tech products for the modern enterprise.
               </p>
             </div>
             <div className="flex flex-wrap gap-10 lg:gap-20 text-sm">
               <div className="space-y-4">
-                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-400">Company</h3>
-                <ul className="space-y-3 text-stone-600">
-                  <li><a href="#services" className="hover:text-stone-900 transition-colors">Products</a></li>
-                  <li><a href="#cases" className="hover:text-stone-900 transition-colors">Case Studies</a></li>
-                  <li><a href="#" className="hover:text-stone-900 transition-colors">Login</a></li>
+                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-500">Company</h3>
+                <ul className="space-y-3 text-stone-400">
+                  <li><a href="#services" className="hover:text-white transition-colors">Products</a></li>
+                  <li><a href="#cases" className="hover:text-white transition-colors">Case Studies</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors">Login</a></li>
                 </ul>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-400">Connect</h3>
-                <ul className="space-y-3 text-stone-600">
-                  <li><a href="#" className="flex items-center gap-2 hover:text-stone-900 transition-colors"><iconify-icon icon="simple-icons:linkedin" width="14"></iconify-icon> LinkedIn</a></li>
-                  <li><a href="#" className="flex items-center gap-2 hover:text-stone-900 transition-colors"><iconify-icon icon="simple-icons:twitter" width="14"></iconify-icon> Twitter</a></li>
-                  <li><a href="#" className="flex items-center gap-2 hover:text-stone-900 transition-colors"><iconify-icon icon="simple-icons:github" width="14"></iconify-icon> GitHub</a></li>
+                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-500">Connect</h3>
+                <ul className="space-y-3 text-stone-400">
+                  <li><a href="#" className="flex items-center gap-2 hover:text-white transition-colors"><iconify-icon icon="simple-icons:linkedin" width="14"></iconify-icon> LinkedIn</a></li>
+                  <li><a href="#" className="flex items-center gap-2 hover:text-white transition-colors"><iconify-icon icon="simple-icons:twitter" width="14"></iconify-icon> Twitter</a></li>
+                  <li><a href="#" className="flex items-center gap-2 hover:text-white transition-colors"><iconify-icon icon="simple-icons:github" width="14"></iconify-icon> GitHub</a></li>
                 </ul>
               </div>
               <div className="space-y-4">
-                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-400">Legal</h3>
-                <ul className="space-y-3 text-stone-600">
-                  <li><a href="#" className="hover:text-stone-900 transition-colors">Privacy Policy</a></li>
-                  <li><a href="#" className="hover:text-stone-900 transition-colors">Terms</a></li>
+                <h3 className="text-xs uppercase font-semibold tracking-wider text-stone-500">Legal</h3>
+                <ul className="space-y-3 text-stone-400">
+                  <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
+                  <li><a href="#" className="hover:text-white transition-colors">Terms</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-xs border-stone-200 text-stone-400">
+          <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4 text-xs border-stone-800 text-stone-500">
             <p>© 2026 Neurallabs. All rights reserved.</p>
           </div>
         </div>

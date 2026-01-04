@@ -21,8 +21,8 @@ function App() {
           
           <Hero />
           
-          {/* White Background Section Container */}
-          <div className="bg-white w-full z-20 rounded-t-[40px] pt-12 pb-12 relative shadow-[0_-20px_40px_rgba(0,0,0,0.02)]">
+          {/* Dark Background Section Container */}
+          <div className="bg-neutral-950 w-full z-20 rounded-t-[40px] pt-12 pb-12 relative shadow-[0_-20px_40px_rgba(0,0,0,0.5)] border-t border-neutral-800">
             <Marquee />
             <PainPoints />
             <Services />
