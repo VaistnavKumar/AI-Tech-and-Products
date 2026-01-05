@@ -1,6 +1,3 @@
-// This file extends the global JSX namespace to support custom elements like 'iconify-icon'.
-// We use a module augmentation pattern to ensure we merge with, rather than overwrite, standard React types.
-
 import React from 'react';
 
 declare global {
@@ -12,8 +9,8 @@ declare global {
         height?: string | number;
         class?: string;
       };
-      // Allow any other element (standard HTML elements) to prevent 'Property does not exist' errors
-      [elemName: string]: any;
     }
   }
 }
+
+export {};

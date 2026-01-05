@@ -13,16 +13,13 @@ function App() {
     <>
       <Header />
       
-      {/* Background Grid */}
-      <div className="fixed grid-lines w-full h-[100vh] top-0 right-0 left-0 pointer-events-none z-0"></div>
-
       <div className="relative z-10 flex flex-col min-h-screen pt-16 lg:pt-20">
         <main className="flex-1 w-full">
           
           <Hero />
           
-          {/* Dark Background Section Container */}
-          <div className="bg-neutral-950 w-full z-20 rounded-t-[40px] pt-12 pb-12 relative shadow-[0_-20px_40px_rgba(0,0,0,0.5)] border-t border-neutral-800">
+          {/* Cyber Dark Background Section Container */}
+          <div className="bg-[#0a0a12] w-full z-20 rounded-t-[40px] pt-12 pb-12 relative shadow-[0_-10px_40px_rgba(0,243,255,0.05)] border-t border-white/5">
             <Marquee />
             <PainPoints />
             <Services />
