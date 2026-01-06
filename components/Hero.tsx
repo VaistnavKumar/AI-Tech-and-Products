@@ -2,91 +2,69 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="lg:px-12 lg:pt-16 lg:pb-16 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 min-h-[60vh] lg:min-h-[75vh] max-w-[1600px] mr-auto ml-auto pt-8 pr-6 pb-12 pl-6 items-center">
-      <div className="animate-clip-in lg:col-span-7 space-y-6" style={{ animationDelay: '0.1s' }}>
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border text-xs font-medium bg-brand-neonCyan/10 border-brand-neonCyan/30 text-brand-neonCyan backdrop-blur-sm shadow-[0_0_10px_rgba(0,243,255,0.1)]">
-          <span className="w-2 h-2 rounded-full bg-brand-neonCyan animate-pulse shadow-[0_0_8px_#00f3ff]"></span>
-          Next-Gen AI Solutions
-        </div>
+    <section className="lg:px-12 pb-20 pt-8 lg:pt-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-[1600px] mx-auto px-6 items-center">
+      <div className="lg:col-span-6 space-y-8">
         
-        {/* Headline */}
-        <h1 className="leading-[0.95] lg:text-7xl xl:text-8xl text-5xl font-medium text-white tracking-tighter">
-          Intelligent Products, 
-          <span className="text-white font-google-sans-flex relative inline-block mx-2">
-            Engineered
-            <svg className="absolute w-full h-3 -bottom-1 left-0 text-brand-neonPurple -z-10 opacity-80 drop-shadow-[0_0_5px_rgba(188,19,254,0.8)]" viewBox="0 0 100 10" preserveAspectRatio="none">
-              <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none"></path>
-            </svg>
-          </span> for Impact.
-        </h1>
-        <p className="leading-relaxed lg:text-xl text-lg font-normal text-stone-400 font-montserrat max-w-2xl">
-          We build cutting-edge AI tools and scalable tech products that transform how you work. From <span className="text-brand-neonCyan">generative agents</span> to <span className="text-brand-neonPurple">predictive analytics</span>.
-        </p>
-        
-        <div className="flex flex-col sm:flex-row gap-4 pt-2">
-          <button className="glass-button all-unset cursor-pointer outline-none focus:outline-none z-30 pointer-events-auto text-base rounded-full relative group">
-            <span className="button-text block select-none text-lg font-semibold text-white tracking-tight pt-4 pr-8 pb-4 pl-8 relative text-glow-blue">
-              Explore Our Products
+        {/* Headline with 3D Roll-Up Animation */}
+        <h1 className="leading-[1.05] lg:text-[5.5rem] xl:text-[6.5rem] text-6xl font-medium text-brand-textDark tracking-tight font-google-sans-flex perspective-text">
+          <div className="overflow-hidden block">
+            <span className="block animate-roll-up opacity-0 origin-bottom" style={{ animationDelay: '0.1s' }}>
+              Building the Future
             </span>
-            <div className="button-shine"></div>
-          </button>
-          <button className="flex items-center justify-center gap-2 px-8 py-4 rounded-full border border-white/10 font-semibold text-stone-300 hover:bg-white/5 hover:border-brand-neonPurple/50 hover:text-brand-neonPurple transition-all duration-300">
-            See Case Studies
+          </div>
+          <div className="overflow-hidden block">
+            <span className="block animate-roll-up opacity-0 origin-bottom text-brand-dark" style={{ animationDelay: '0.3s' }}>
+              of AI & Tech
+            </span>
+          </div>
+        </h1>
+
+        {/* CTA Section */}
+        <div className="flex flex-col sm:flex-row items-center gap-6 pt-4 animate-fade-up opacity-0" style={{ animationDelay: '0.8s' }}>
+          <button className="bg-brand-accent text-brand-textDark hover:bg-stone-200 transition-all duration-300 pl-8 pr-2 py-2 rounded-full text-base font-medium flex items-center gap-4 group">
+            Explore Products
+            <span className="bg-brand-dark text-white w-10 h-10 rounded-full flex items-center justify-center group-hover:rotate-45 transition-transform duration-300">
+               <iconify-icon icon="lucide:arrow-up-right"></iconify-icon>
+            </span>
           </button>
         </div>
       </div>
 
       {/* Hero Visual */}
-      <div className="lg:col-span-5 flex flex-col animate-fade-up lg:mt-0 h-full mt-8 relative justify-center" style={{ animationDelay: '0.3s' }}>
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-brand-neonPurple opacity-20 blur-[100px] rounded-full pointer-events-none mix-blend-screen"></div>
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200px] h-[200px] bg-brand-neonCyan opacity-20 blur-[80px] rounded-full pointer-events-none mix-blend-screen"></div>
-        
-        <div className="relative space-y-4">
+      <div className="lg:col-span-6 flex flex-col animate-fade-up lg:mt-0 relative items-center justify-center h-full min-h-[500px]" style={{ animationDelay: '0.5s' }}>
           
-          {/* Card 1: AI Model */}
-          <div className="glass-panel p-4 rounded-xl flex items-center gap-4 animate-float shadow-lg lg:ml-0 max-w-sm mx-auto w-full bg-black/40 border-brand-neonCyan/30" style={{ animationDelay: '0s' }}>
-            <div className="w-10 h-10 rounded-full flex items-center justify-center border shrink-0 bg-brand-neonCyan/20 text-brand-neonCyan border-brand-neonCyan/50 shadow-[0_0_10px_rgba(0,243,255,0.2)]">
-              <iconify-icon icon="lucide:brain" width="20"></iconify-icon>
+        {/* Main Image Placeholder / Character */}
+        <div className="relative z-10 w-full max-w-md mx-auto">
+            {/* Abstract representation of the 'Product' */}
+            <div className="aspect-[4/5] rounded-[40px] bg-gradient-to-b from-stone-100 to-brand-accent overflow-hidden relative shadow-2xl">
+                 <img 
+                    src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&w=2940&auto=format&fit=crop" 
+                    alt="Neurallabs Technology" 
+                    className="object-cover w-full h-full mix-blend-multiply opacity-90 scale-105 hover:scale-100 transition-transform duration-700"
+                 />
+                 <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/20 to-transparent"></div>
             </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex justify-between items-center mb-0.5">
-                <p className="text-xs font-semibold text-white">Neural Network</p>
-                <span className="text-[10px] text-brand-neonCyan">v4.2.0</span>
-              </div>
-              <p className="text-xs text-stone-400 truncate">Training Complete</p>
-            </div>
-            <span className="text-[10px] px-2 py-0.5 rounded border font-medium bg-brand-neonCyan/10 text-brand-neonCyan border-brand-neonCyan/20">98.5% Accuracy</span>
-          </div>
 
-          {/* Card 2: AI Assistant */}
-          <div className="glass-panel p-4 rounded-xl flex items-center gap-4 animate-float shadow-lg lg:ml-8 max-w-sm mx-auto w-full bg-black/40 border-brand-neonPurple/30" style={{ animationDelay: '1.5s' }}>
-            <div className="flex shrink-0 bg-brand-neonPurple/20 w-10 h-10 border rounded-full items-center justify-center text-brand-neonPurple border-brand-neonPurple/50 shadow-[0_0_10px_rgba(188,19,254,0.2)]">
-              <iconify-icon icon="lucide:message-square" width="20"></iconify-icon>
+            {/* Floating UI Card - Stats */}
+            <div className="absolute top-10 -right-12 bg-white/90 backdrop-blur p-4 rounded-2xl shadow-xl animate-float">
+                <div className="flex items-center gap-3">
+                    <div className="flex -space-x-2">
+                        <div className="w-8 h-8 rounded-full bg-gray-300 border-2 border-white"></div>
+                        <div className="w-8 h-8 rounded-full bg-gray-400 border-2 border-white"></div>
+                        <div className="w-8 h-8 rounded-full bg-gray-500 border-2 border-white"></div>
+                    </div>
+                    <div>
+                        <span className="block text-lg font-bold text-brand-textDark">20M+</span>
+                    </div>
+                </div>
             </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex justify-between items-center mb-0.5">
-                <p className="text-xs font-semibold text-white">AI Assistant</p>
-                <span className="text-[10px] text-brand-neonPurple">Live</span>
-              </div>
-              <p className="text-xs text-stone-400 truncate">Processing user request...</p>
-            </div>
-            <span className="bg-brand-neonPurple/20 text-[10px] px-2 py-0.5 rounded border border-brand-neonPurple/40 font-medium text-brand-neonPurple">Active</span>
-          </div>
 
-          {/* Card 3: Performance */}
-          <div className="glass-panel p-4 rounded-xl flex items-center gap-4 animate-float shadow-lg lg:-ml-4 max-w-sm mx-auto w-full bg-black/40 border-white/10" style={{ animationDelay: '2.5s' }}>
-            <div className="w-10 h-10 rounded-full text-white flex items-center justify-center border shrink-0 bg-white/5 border-white/10">
-              <iconify-icon icon="lucide:zap" width="20"></iconify-icon>
+             {/* Floating UI Card - Description */}
+            <div className="absolute bottom-12 -left-12 max-w-[240px] text-right">
+                <p className="text-sm font-medium text-stone-600 leading-relaxed bg-white/80 p-4 rounded-2xl backdrop-blur-sm shadow-lg border border-stone-100">
+                    Empower your enterprise with Neurallabs' intelligent products designed to scale innovation.
+                </p>
             </div>
-            <div className="flex-1 min-w-0">
-              <div className="flex justify-between items-center mb-0.5">
-                <p className="text-xs font-semibold text-white">System Load</p>
-                <span className="text-[10px] text-brand-neonCyan">Optimal</span>
-              </div>
-              <p className="text-xs text-stone-400 truncate">Inference Latency: 12ms</p>
-            </div>
-            <span className="text-[10px] px-2 py-0.5 rounded border font-medium bg-white/5 text-stone-300 border-white/10">Turbo</span>
-          </div>
         </div>
       </div>
     </section>
