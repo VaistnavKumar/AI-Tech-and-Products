@@ -27,7 +27,8 @@ const Marquee: React.FC = () => {
             <div className="flex items-center gap-2 text-xl lg:text-2xl font-bold font-sans"><iconify-icon icon="lucide:zap"></iconify-icon> BoltSoft</div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
   );
 };
 
